@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Tomato Vibe - Signup</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="welcome-text">WELCOME TO TOMEYTO!</h1>
+        <form action="backend_signup.php" method="post" class="signup-form">    
+            <h2>Signup</h2>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" name="confirmPassword" placeholder="Confirm Password" required><br>
+            <span id="error-message" style="color: red;"></span><br>
+            <button type="submit" name="signup">Signup</button>
+        </form>
+        <p class="login-link">Already have an account? <a href="index.html">Login</a></p>
+    </div>
+    <div id="notification" class="notification"></div>
+    <script src= "js/signup.js"></script>
+</body>
+</html>

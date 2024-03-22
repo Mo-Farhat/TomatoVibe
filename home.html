@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/keypad.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/livescount.css">
+    <title>Welcome to Tomeyto</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="welcome-text">WELCOME TO TOMEYTO!</h1>
+        <div id="game-container">
+            <img id="game-image" alt="Tomeyto Game">
+            <div id="answer-container">
+                <label for="answer">What is the value of the tomeato?</label>
+                <input type="text" id="answer" placeholder="Enter your answer">
+                
+            </div>
+            <nav class="navbar">
+                <div class="dropdown">
+                    <button class="dropbtn">&#9776;</button>
+                    <div class="dropdown-content">
+                        <a href="#">Settings</a>
+                        <a href="index.html">Logout</a>
+                        <a href="main_menu.html">Main Menu</a>
+                    </div>
+                </div>
+                
+            </nav>
+            <div class="keypad">
+                <button class="keypad-button" onclick="appendToAnswer('1')">1</button>
+                <button class="keypad-button" onclick="appendToAnswer('2')">2</button>
+                <button class="keypad-button" onclick="appendToAnswer('3')">3</button>
+                <button class="keypad-button" onclick="appendToAnswer('4')">4</button>
+                <button class="keypad-button" onclick="appendToAnswer('5')">5</button>
+                <button class="keypad-button" onclick="appendToAnswer('6')">6</button>
+                <button class="keypad-button" onclick="appendToAnswer('7')">7</button>
+                <button class="keypad-button" onclick="appendToAnswer('8')">8</button>
+                <button class="keypad-button" onclick="appendToAnswer('9')">9</button>
+                <button class="keypad-button" onclick="appendToAnswer('0')">0</button>
+                <button class="keypad-button" onclick="backspace('←')">Backspace</button>
+                <button class="keypad-button" onclick="submitAnswer()">↵</button>
+            </div>            
+            
+            <p id="result-message"></p>
+            <p id="score">Score: 0</p>
+            <p id="lives">Lives left: 3<span id="remaining-tries"></span></p>
+            
+            
+        </div>
+    </div>
+    <script src="js/keypad.js"></script>
+    <script src="js/game.js"></script>
+    
+</body>
+</html>
