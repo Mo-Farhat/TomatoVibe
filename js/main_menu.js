@@ -1,24 +1,9 @@
-function fetchJoke() {
-    fetch('https://api.jokes.one')
+document.getElementById("getJokeButton").addEventListener("click", function() {
+    fetch("https://official-joke-api.appspot.com/random_joke")
         .then(response => response.json())
         .then(data => {
-            // Extract joke from the JSON response
-            const joke = data.contents.jokes[0].joke.text;
-
-            // Display the joke on the page
-            displayJoke(joke);
+            const joke = data.setup + " " + data.punchline;
+            document.getElementById("joke").innerText = joke;
         })
-        .catch(error => {
-            console.error('Error fetching joke:', error);
-            // Handle errors, such as displaying an error message
-        });
-}
-
-function displayJoke(joke) {
-    const jokeElement = document.getElementById('joke');
-    jokeElement.innerText = joke;
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById('getJokeButton').addEventListener('click', fetchJoke);
+        .catch(error => console.error("Error fetching joke:", error));
 });
