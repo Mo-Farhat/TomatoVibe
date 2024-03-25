@@ -14,14 +14,19 @@ $sql = "SELECT username, score FROM leaderboard ORDER BY score DESC LIMIT 10"; /
 
 $result = $conn->query($sql);
 
+$leaderboardData = array();
 if ($result->num_rows > 0) {
-    // Output data of each row
+    // Fetch leaderboard data
     while($row = $result->fetch_assoc()) {
-        echo "Username: " . $row["username"]. " - Score: " . $row["score"]. "<br>";
+        $leaderboardData[] = array(
+            'username' => $row["username"],
+            'score' => $row["score"]
+        );
     }
-} else {
-    echo "0 results";
-}
+} 
 
+// Return JSON response
+header('Content-Type: application/json');
+echo json_encode($leaderboardData);
 $conn->close();
 ?>
