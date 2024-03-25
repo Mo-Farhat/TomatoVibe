@@ -24,5 +24,21 @@
     </div>
     <div id="notification" class="notification"></div>
     <script src= "js/signup.js"></script>
+    <script>
+        function showPasswordMismatchNotification() {
+            var notification = document.createElement('div');
+            notification.classList.add('notification');
+            notification.textContent = 'Error: Passwords do not match. Please try again.';
+            document.body.appendChild(notification);
+        
+            // Add a close button to dismiss the notification
+            var closeButton = document.createElement('button');
+            closeButton.textContent = 'Close';
+            closeButton.onclick = function() {
+                document.body.removeChild(notification);
+            };
+            notification.appendChild(closeButton);
+        }
+        </script>
 </body>
 </html>

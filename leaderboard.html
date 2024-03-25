@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/difficulty.css">
+    <title>Tomato Vibe - Leaderboard</title>
+    <link rel="stylesheet" href="css/leaderboard.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <title>Tomato Vibe - Select Difficulty</title>
 </head>
 <body>
     <div class="container">
-        <h1 class="welcome-text">WELCOME TO TOMEYTO!</h1>
-        <h2>Select Difficulty</h2>
-        <ul class="difficulty-options">
-            <li><a href="home.html">Easy</a></li>
-            <li><a href="home.html?difficulty=medium">Medium</a></li>
-            <li><a href="home.html?difficulty=hard">Hard</a></li>
-        </ul>
+        <h1>Leaderboard</h1>
+        <table id="leaderboard-table">
+            <!-- Table headers (e.g., Rank, Username, Score) -->
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <!-- Table body for leaderboard data -->
+            <tbody>
+                <!-- Leaderboard data will be populated here dynamically -->
+            </tbody>
+        </table>
     </div>
     <nav class="navbar">
         <div class="dropdown">
@@ -28,5 +35,6 @@
         </div>
         
     </nav>
+    <script src="js/leaderboard.js"></script>
 </body>
 </html>

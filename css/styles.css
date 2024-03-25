@@ -151,3 +151,23 @@ a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 9999;
 }
+
+.notification {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff6347; /* Tomato Red */
+    color: #ffffff; /* White */
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.notification button {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}

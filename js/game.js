@@ -36,7 +36,6 @@ function initializeGame() {
 
     updateTriesDisplay(remainingTries);
     startTimer(); // Start the timer based on the adjusted time limit
-    
 }
 
 function getNextQuestion() {
@@ -74,6 +73,8 @@ function submitAnswer() {
                 // If no tries left, show the game over message and play again button
                 document.getElementById('result-message').innerText = `Game over! Your final score is ${score}.`;
                 showPlayAgainButton(score);
+                // End game session and submit score to leaderboard
+                endGame('username', score);
             }
         }
     } else {
@@ -110,10 +111,7 @@ function showPlayAgainButton(score) {
         };
         document.getElementById('game-container').appendChild(playAgainButton);
     }
-    
 }
-
-
 
 function checkAnswer(answer) {
     return answer === currentGame.solution;
@@ -145,4 +143,27 @@ function retryGame() {
 
     // Fetch a new question
     getNextQuestion();
+}
+
+// Function to end the game session and submit the final score to the leaderboard
+function endGame(username, finalScore) {
+    // Send final score to server
+    fetch('backend_leaderboard.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            username: username,
+            score: finalScore
+        })
+    })
+    .then(response => {
+        if (response.ok) {
+            console.log('Score submitted successfully.');
+        } else {
+            console.error('Failed to submit score.');
+        }
+    })
+    .catch(error => console.error('Error:', error));
 }
