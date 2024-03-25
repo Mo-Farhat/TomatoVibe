@@ -11,10 +11,9 @@ function fetchLeaderboard() {
 
 // Function to display leaderboard data
 function displayLeaderboard(leaderboardData) {
-    // Assuming you have an HTML element with id 'leaderboard' to display leaderboard
-    const leaderboardElement = document.getElementById('leaderboard');
+    const leaderboardElement = document.getElementById('leaderboard-table');
 
-    // Clear any existing content
+    // Clear previous content
     leaderboardElement.innerHTML = '';
 
     // Create HTML elements to display leaderboard
