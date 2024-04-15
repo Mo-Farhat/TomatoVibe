@@ -1,3 +1,5 @@
+// leaderboard.js
+
 // Function to fetch and display leaderboard
 function fetchLeaderboard() {
     fetch('backend_leaderboard.php')
@@ -11,16 +13,18 @@ function fetchLeaderboard() {
 
 // Function to display leaderboard data
 function displayLeaderboard(leaderboardData) {
-    const leaderboardElement = document.getElementById('leaderboard-table');
+    const leaderboardTable = document.querySelector('table tbody');
 
-    // Clear previous content
-    leaderboardElement.innerHTML = '';
+    // Clear existing table rows
+    leaderboardTable.innerHTML = '';
 
-    // Create HTML elements to display leaderboard
+    // Iterate over leaderboard data and create table rows
     leaderboardData.forEach(entry => {
-        const listItem = document.createElement('li');
-        listItem.textContent = `${entry.username}: ${entry.score}`;
-        leaderboardElement.appendChild(listItem);
+        const row = `<tr>
+                        <td>${entry.username}</td>
+                        <td>${entry.score}</td>
+                    </tr>`;
+        leaderboardTable.innerHTML += row;
     });
 }
 
