@@ -146,7 +146,6 @@ function retryGame() {
 }
 
 // Function to end the game session and submit the final score to the leaderboard
-// Function to end the game session and submit the final score to the leaderboard
 function endGame(username, finalScore) {
     // Send final score to server
     fetch('backend_leaderboard.php', {
@@ -170,4 +169,3 @@ function endGame(username, finalScore) {
     })
     .catch(error => console.error('Error:', error));
 }
-
