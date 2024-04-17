@@ -64,6 +64,8 @@ function submitAnswer() {
             score++;
             getNextQuestion();
             updateScoreDisplay();
+            clearInterval(timerInterval);
+            startTimer();
         } else {
             remainingTries--;
             updateLivesDisplay();

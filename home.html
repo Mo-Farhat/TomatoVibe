@@ -6,27 +6,28 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/keypad.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/livescount.css">
+    <link rel="stylesheet" href="css/game-theme.css">
     <title>Welcome to Tomeyto</title>
 </head>
 <body>
     <div class="container">
-        <h1 class="welcome-text">WELCOME TO TOMEYTO!</h1>
+        <h1 class="welcome-text">WELCOME TO TOMATO VIBE!</h1>
         <div id="game-container">
             <img id="game-image" alt="Tomeyto Game">
             <div id="answer-container">
                 <label for="answer">What is the value of the tomeato?</label>
                 <input type="text" id="answer" placeholder="Enter your answer">
-                
+                    
             </div>
+            
             <nav class="navbar">
                 <div class="dropdown">
                     <button class="dropbtn">&#9776;</button>
-                    <div class="dropdown-content">
-                        <a href="settings.html">Settings</a>
-                        <a href="index.html">Logout</a>
-                        <a href="main_menu.html">Main Menu</a>
+                    <div class="dropdown-content"> 
                         <a href="leaderboard.html">Leaderboard</a>
+                        <a href="settings.html">Settings</a> 
+                        <a href="main_menu.html">Main Menu</a>
+                        <a href="index.html">Logout</a>
                     </div>
                 </div>
                 
@@ -47,6 +48,7 @@
             </div>            
             
             <p id="result-message"></p>
+            <p id="timer">Time Left: <span id="timer"></span></p> 
             <p id="score">Score: 0</p>
             <p id="lives">Lives left: 3<span id="remaining-tries"></span></p>
             
@@ -56,5 +58,6 @@
     <script src="js/keypad.js"></script>
     <script src="js/game.js"></script>
     <script src="js/leaderboard.js"></script>
+    <script src="js/timer.js"></script>
 </body>
 </html>

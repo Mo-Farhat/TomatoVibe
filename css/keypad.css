@@ -1,20 +1,42 @@
+/* Keypad styles */
+
 .keypad {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    gap: 10px;
     margin-top: 15px;
 }
 
 .keypad button {
     width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #ff4444;
-    font-size: 16px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff6347; /* Tomato color */
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* White text color */
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
 
 .keypad button:hover {
-    background-color: #e0e0e0d4;
+    background-color: #cc4c38; /* Darker Tomato color on hover */
+}
+
+#play-again-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4caf50; /* Green color */
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* White text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+#play-again-button:hover {
+    background-color: #388e3c; /* Darker Green color on hover */
 }
