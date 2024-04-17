@@ -1,45 +1,63 @@
+/* navbar.css */
+
 .navbar {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10px; /* Adjust the top position */
+    left: 10px; /* Adjust the left position */
     z-index: 1;
-    background-color: tomato;
-    padding: 10px;
+    background-color: #4CAF50; /* Green background */
+    padding: 10px 20px; /* Adjust padding */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Add shadow for depth */
 }
 
 .dropbtn {
-    background-color: inherit;
-    color: white;
-    padding: 16px;
-    font-size: 24px;
-    border: none;
+    background-color: #4CAF50; /* Green background */
+    color: #fff; /* White text */
+    padding: 12px 24px; /* Adjust padding */
+    font-size: 18px; /* Adjust font size */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.dropbtn:hover {
+    background-color: #45a049; /* Darker green on hover */
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
+    margin-left: 20px; /* Add margin between dropdowns */
 }
-
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Light grey background */
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    z-index: 2; /* Ensure dropdown stays on top */
+    border-radius: 10px; /* Rounded corners */
 }
 
 .dropdown-content a {
-    color: black;
+    color: #333; /* Dark grey text */
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {
+    background-color: #ddd; /* Lighter grey on hover */
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-.dropdown:hover .dropbtn {background-color: tomato;}
+.dropdown:hover .dropbtn {
+    background-color: #45a049; /* Darker green on hover */
+}
