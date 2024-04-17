@@ -64,11 +64,12 @@ function submitAnswer() {
             score++;
             getNextQuestion();
             updateScoreDisplay();
-            clearInterval(timerInterval);
-            startTimer();
+            clearInterval(timerInterval); // Stop the timer
+            startTimer(timeLimit); // Start a new timer
         } else {
             remainingTries--;
             updateLivesDisplay();
+
             if (remainingTries > 0) {
                 document.getElementById('result-message').innerText = `Incorrect. ${remainingTries} ${remainingTries > 1 ? 'tries' : 'try'} left.`;
             } else {
@@ -77,6 +78,7 @@ function submitAnswer() {
                 showPlayAgainButton(score);
                 // End game session and submit score to leaderboard
                 endGame('username', score);
+                clearInterval(timerInterval); // Stop the timer
             }
         }
     } else {
@@ -110,6 +112,8 @@ function showPlayAgainButton(score) {
         playAgainButton.id = 'play-again-button';
         playAgainButton.onclick = () => {
             resetGame(); // Reset the game when play again button is clicked
+            clearInterval(timerInterval); // Clear the existing timer interval
+            startTimer(); // Start a new timer
         };
         document.getElementById('game-container').appendChild(playAgainButton);
     }

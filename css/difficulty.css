@@ -25,6 +25,7 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Menu styles */
 .menu, .difficulty-options {
     list-style-type: none;
     padding: 0;
@@ -39,9 +40,10 @@ h2 {
     background-color: #ffa07a; /* Light Salmon */
     color: #ffffff; /* White */
     text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 15px; /* Increase padding for better clickability */
+    border-radius: 10px; /* Round the corners */
     transition: background-color 0.3s ease;
+    font-weight: bold; /* Make the font bolder */
 }
 
 .menu a:hover, .difficulty-options a:hover {

@@ -1,30 +1,39 @@
-/* styles.css */
+/* main_menu.css */
 
+/* Body styles */
 body {
     background-color: #ff6347; /* Tomato Red */
     color: #ffffff; /* White */
-    font-family: Arial, sans-serif;
+    font-family: 'Press Start 2P', cursive; /* Retro gaming font */
     margin: 0;
     padding: 0;
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    height: 100vh; /* Full height of the viewport */
 }
 
+/* Container styles */
 .container {
     max-width: 800px;
-    margin: 0 auto;
     padding: 20px;
     text-align: center;
 }
 
+/* Welcome text styles */
 .welcome-text {
     font-size: 36px;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
 }
 
+/* Header styles */
 h2 {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
+/* Menu styles */
 .menu, .difficulty-options {
     list-style-type: none;
     padding: 0;
@@ -39,30 +48,32 @@ h2 {
     background-color: #ffa07a; /* Light Salmon */
     color: #ffffff; /* White */
     text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 15px; /* Increase padding for better clickability */
+    border-radius: 10px; /* Round the corners */
     transition: background-color 0.3s ease;
+    font-weight: bold; /* Make the font bolder */
 }
 
 .menu a:hover, .difficulty-options a:hover {
     background-color: #ff8c69; /* Darker Light Salmon */
 }
 
+/* Get Joke button styles */
 #getJokeButton {
-    background-color: #ffa07a;
+    background-color: #ffa07a; /* Light Salmon */
     color: white;
     border: none;
-    padding: 10px;
+    padding: 15px; /* Increase padding for better clickability */
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px; /* Round the corners */
     transition: background-color 0.3s ease;
     width: 100%;
-    
+    font-weight: bold;
 }
 
 #getJokeButton:hover {
-    background-color: #ff8c69; /* Darker shade of tomato */
+    background-color: #ff8c69; /* Darker shade of Light Salmon on hover */
 }
