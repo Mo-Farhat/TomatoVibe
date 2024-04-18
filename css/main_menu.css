@@ -2,15 +2,15 @@
 
 /* Body styles */
 body {
-    background-color: #ff6347; /* Tomato Red */
-    color: #ffffff; /* White */
-    font-family: 'Press Start 2P', cursive; /* Retro gaming font */
+    background-color: #ff6347; 
+    color: #ffffff; 
+    font-family: 'Press Start 2P', cursive; 
     margin: 0;
     padding: 0;
-    display: flex; /* Use flexbox for centering */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    height: 100vh; /* Full height of the viewport */
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    height: 100vh; 
 }
 
 /* Container styles */
@@ -24,7 +24,7 @@ body {
 .welcome-text {
     font-size: 36px;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 /* Header styles */
@@ -45,35 +45,35 @@ h2 {
 
 .menu a, .difficulty-options a {
     display: block;
-    background-color: #ffa07a; /* Light Salmon */
-    color: #ffffff; /* White */
+    background-color: #ffa07a; 
+    color: #ffffff; 
     text-decoration: none;
-    padding: 15px; /* Increase padding for better clickability */
-    border-radius: 10px; /* Round the corners */
+    padding: 15px; 
+    border-radius: 10px; 
     transition: background-color 0.3s ease;
-    font-weight: bold; /* Make the font bolder */
+    font-weight: bold; 
 }
 
 .menu a:hover, .difficulty-options a:hover {
-    background-color: #ff8c69; /* Darker Light Salmon */
+    background-color: #ff8c69; 
 }
 
 /* Get Joke button styles */
 #getJokeButton {
-    background-color: #ffa07a; /* Light Salmon */
+    background-color: #ffa07a; 
     color: white;
     border: none;
-    padding: 15px; /* Increase padding for better clickability */
+    padding: 15px; 
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 10px; /* Round the corners */
+    border-radius: 10px; 
     transition: background-color 0.3s ease;
     width: 100%;
     font-weight: bold;
 }
 
 #getJokeButton:hover {
-    background-color: #ff8c69; /* Darker shade of Light Salmon on hover */
+    background-color: #ff8c69; 
 }

@@ -5,15 +5,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ff6347; /* Tomato color */
+    background-color: #ff6347; 
 }
 
 .container {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .welcome-text {
@@ -28,7 +28,7 @@ form {
 
 h2 {
     text-align: center;
-    color: #ff6347; /* Tomato color */
+    color: #ff6347; 
 }
 
 label {
@@ -48,7 +48,7 @@ input {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #ff6347; /* Tomato color */
+    background-color: #ff6347;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -56,7 +56,7 @@ button {
 }
 
 button:hover {
-    background-color: #cc4c38; /* Darker Tomato color */
+    background-color: #cc4c38; 
 }
 
 p {
@@ -65,7 +65,7 @@ p {
 }
 
 a {
-    color: #ff6347; /* Tomato color */
+    color: #ff6347; 
     text-decoration: none;
     font-weight: bold;
 }
@@ -75,7 +75,7 @@ a:hover {
 }
 
 #game-container {
-    background-color: #ffffff; /* White */
+    background-color: #ffffff; 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -100,21 +100,21 @@ a:hover {
 #submit-answer {
     padding: 10px;
     font-size: 16px;
-    background-color: #28a745; /* Green */
-    color: #ffffff; /* White */
+    background-color: #28a745; 
+    color: #ffffff; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 #submit-answer:hover {
-    background-color: #218838; /* Darker Green */
+    background-color: #218838; 
 }
 
 #result-message {
     margin-top: 10px;
     font-size: 18px;
-    color: #dc3545; /* Red */
+    color: #dc3545; 
 }
 
 #score {
@@ -127,15 +127,15 @@ a:hover {
     margin-top: 20px;
     padding: 10px;
     font-size: 16px;
-    background-color: #007bff; /* Blue */
-    color: #ffffff; /* White */
+    background-color: #007bff; 
+    color: #ffffff; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 #logout:hover {
-    background-color: #0056b3; /* Darker Blue */
+    background-color: #0056b3; 
 }
 
 .notification {
@@ -157,8 +157,8 @@ a:hover {
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #ff6347; /* Tomato Red */
-    color: #ffffff; /* White */
+    background-color: #ff6347; 
+    color: #ffffff; 
     padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);

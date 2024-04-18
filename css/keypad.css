@@ -12,16 +12,16 @@
     padding: 15px;
     border: none;
     border-radius: 10px;
-    background-color: #ff6347; /* Tomato color */
+    background-color: #ff6347; 
     font-size: 24px;
     font-weight: bold;
-    color: #fff; /* White text color */
+    color: #fff; 
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    transition: background-color 0.3s ease; 
 }
 
 .keypad button:hover {
-    background-color: #cc4c38; /* Darker Tomato color on hover */
+    background-color: #cc4c38; 
 }
 
 #play-again-button {
@@ -29,14 +29,14 @@
     padding: 15px 30px;
     border: none;
     border-radius: 10px;
-    background-color: #4caf50; /* Green color */
+    background-color: #4caf50;
     font-size: 24px;
     font-weight: bold;
-    color: #fff; /* White text color */
+    color: #fff; 
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    transition: background-color 0.3s ease; 
 }
 
 #play-again-button:hover {
-    background-color: #388e3c; /* Darker Green color on hover */
+    background-color: #388e3c; 
 }
