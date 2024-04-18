@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 27, 2024 at 01:37 PM
+-- Generation Time: Apr 19, 2024 at 01:18 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -38,12 +38,16 @@ CREATE TABLE `leaderboard` (
 --
 
 INSERT INTO `leaderboard` (`id`, `username`, `score`) VALUES
-(1, 'Amz', 0),
-(2, '3', 0),
-(3, 'grant', 0),
-(4, 'user123', 0),
-(5, 'user1234', 0),
-(6, 'a', 0);
+(4, 'user123', 2),
+(7, 'LeaderboardTest', 1),
+(8, 'farhat44', 3),
+(9, 'abc', 2),
+(10, '123', 0),
+(11, '111', 0),
+(12, '2221', 0),
+(13, '33', 0),
+(14, '1', 0),
+(15, 'ABC123', 0);
 
 -- --------------------------------------------------------
 
@@ -100,7 +104,17 @@ INSERT INTO `users_signup` (`id`, `username`, `password`) VALUES
 (16, 'grant', '$2y$10$tzTSTe/nOpTbRGcKT1M4YOx87WHpvjmgtDb7socuM1fLIJOtcYSTG'),
 (17, 'user123', '$2y$10$DQYYLHATY20Cto37c0ahLusK1nCiGupa4/VZjAwJCIh0jsSF8DFqC'),
 (18, 'user1234', '$2y$10$C7VxNv7Hgk4QCe4vHcEoQ.gJDbSNeTg8qvexwrZR9dcHAD8oRTKOq'),
-(19, 'a', '$2y$10$d9cd1.x3Eq1X9OJLPW.r4uRB6e5Alk53TbPNfIiz730RNEZU2vG3u');
+(19, 'a', '$2y$10$d9cd1.x3Eq1X9OJLPW.r4uRB6e5Alk53TbPNfIiz730RNEZU2vG3u'),
+(20, 'LeaderboardTest', '$2y$10$gRVCL/ktuMTEdj6wZZkiY.YjlFP43lm6aMF4Fxbzt7iYncBCrtpL6'),
+(21, 'farhat44', '$2y$10$pdtqKt5WxPGd5pQDadu3ruM/peBme3f3MhJUSx.s2yZke8RFnHBW.'),
+(22, 'abc', '$2y$10$esK5bU.SBrAd4ZnASCw8keGG5qVCb6k1QvQpSzZvmfj1C3SyKuIUi'),
+(23, '123', '$2y$10$jZNFdn1uKFtQrEqKCEEv/ebsIi31NLlBahzRO2XtCvd3Hq1W2VV5m'),
+(24, '111', '$2y$10$7X6q5I3MNXLXGe2RvZQ5fevoFXYk3z6SwOLpp7xLu0pEx3/I0kGwO'),
+(25, '2221', '$2y$10$7vFEMxENhy2FKO8c3wtdzuYg326jBm9AqlE1q.3uD65u2YhbTXzjG'),
+(26, '33', '$2y$10$jz4jqai4y5RZmFu4usaA1OHjz3ZO4UesUZxk/TvcaDIUZ9z10.R7u'),
+(27, '113', '$2y$10$q3Na2FqZsAIIMjXtkYqzQ.g20Oi048cXhe0qw/NQfgNI95pWBG/Oe'),
+(28, '1', '$2y$10$C6dxD0zdMoXLH8ttWD15w.tgXUG5yYnLmxVVkzxjoiY7qiF3ih40G'),
+(29, 'ABC123', '$2y$10$1AEE3luETMCBFa5nNpLbqe4MeCuHtzrUHnHdWegy8DoUSLWrs9sp.');
 
 --
 -- Indexes for dumped tables
@@ -132,7 +146,7 @@ ALTER TABLE `users_signup`
 -- AUTO_INCREMENT for table `leaderboard`
 --
 ALTER TABLE `leaderboard`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `users_login`
@@ -144,7 +158,7 @@ ALTER TABLE `users_login`
 -- AUTO_INCREMENT for table `users_signup`
 --
 ALTER TABLE `users_signup`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

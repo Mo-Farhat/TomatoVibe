@@ -1,8 +1,8 @@
 /* styles.css */
 
 body {
-    background-color: #ff6347; /* Tomato Red */
-    color: #ffffff; /* White */
+    background-color: #ff6347; 
+    color: #ffffff; 
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -37,15 +37,15 @@ h2 {
 
 .menu a, .difficulty-options a {
     display: block;
-    background-color: #ffa07a; /* Light Salmon */
-    color: #ffffff; /* White */
+    background-color: #ffa07a; 
+    color: #ffffff; 
     text-decoration: none;
-    padding: 15px; /* Increase padding for better clickability */
-    border-radius: 10px; /* Round the corners */
+    padding: 15px; 
+    border-radius: 10px; 
     transition: background-color 0.3s ease;
-    font-weight: bold; /* Make the font bolder */
+    font-weight: bold;
 }
 
 .menu a:hover, .difficulty-options a:hover {
-    background-color: #ff8c69; /* Darker Light Salmon */
+    background-color: #ff8c69; 
 }

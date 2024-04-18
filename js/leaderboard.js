@@ -1,6 +1,7 @@
 // leaderboard.js
 
 // Function to fetch and display leaderboard
+
 function fetchLeaderboard() {
     fetch('backend_leaderboard.php')
         .then(response => response.json())
@@ -10,6 +11,7 @@ function fetchLeaderboard() {
         })
         .catch(error => console.error('Error fetching leaderboard:', error));
 }
+
 
 // Function to display leaderboard data
 function displayLeaderboard(leaderboardData) {

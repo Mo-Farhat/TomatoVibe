@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
         
-        // Perform login action here, e.g., send data to backend for authentication
         
         // Set cookies upon successful login
         setCookie('username', username, 30); // Set username cookie for 30 days

@@ -62,10 +62,10 @@ function submitAnswer() {
 
         if (isCorrect) {
             score++;
-            getNextQuestion();
             updateScoreDisplay();
-            clearInterval(timerInterval); // Stop the timer
-            startTimer(timeLimit); // Start a new timer
+            getNextQuestion();
+            clearInterval();
+            startTimer(); 
         } else {
             remainingTries--;
             updateLivesDisplay();
@@ -78,13 +78,14 @@ function submitAnswer() {
                 showPlayAgainButton(score);
                 // End game session and submit score to leaderboard
                 endGame('username', score);
-                clearInterval(timerInterval); // Stop the timer
+                clearInterval(timerInterval);
             }
         }
     } else {
         document.getElementById('result-message').innerText = 'Please enter a valid number.';
     }
 }
+
 
 function resetGame() {
     score = 0;
@@ -125,7 +126,10 @@ function checkAnswer(answer) {
 
 function updateScoreDisplay() {
     document.getElementById('score').innerText = 'Score: ' + score;
+    // Fetch and update leaderboard after updating the score display
+    fetchLeaderboard();
 }
+
 
 function updateLivesDisplay() {
     document.getElementById('lives').innerText = 'Lives left: ' + remainingTries;
@@ -152,7 +156,9 @@ function retryGame() {
 }
 
 // Function to end the game session and submit the final score to the leaderboard
-function endGame(username, finalScore) {
+function endGame(finalScore) {
+    // Retrieve username from session
+    const username = sessionStorage.getItem('username');
     // Send final score to server
     fetch('backend_leaderboard.php', {
         method: 'POST',
