@@ -6,58 +6,54 @@
     left: 10px; /* Adjust the left position */
     z-index: 1;
     background-color: #4CAF50; /* Green background */
-    padding: 10px 20px; /* Adjust padding */
-    border-radius: 20px; /* Rounded corners */
+    padding: 10px 10px; /* Adjust padding */
+    border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Add shadow for depth */
 }
 
 .dropbtn {
-    background-color: #4CAF50; /* Green background */
-    color: #fff; /* White text */
-    padding: 12px 24px; /* Adjust padding */
-    font-size: 18px; /* Adjust font size */
-    border: none; /* Remove border */
-    border-radius: 10px; /* Rounded corners */
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 24px;
+    border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+    border-radius: 5px; /* Add rounded corners */
+    background: none; /* Remove background color */
 }
 
 .dropbtn:hover {
-    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.1); /* Scale up the button on hover */
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
-    margin-left: 20px; /* Add margin between dropdowns */
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9; /* Light grey background */
+    background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
-    z-index: 2; /* Ensure dropdown stays on top */
-    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px; /* Add padding for dropdown content */
 }
 
 .dropdown-content a {
-    color: #333; /* Dark grey text */
-    padding: 12px 16px;
+    color: black;
+    padding: 8px 12px;
     text-decoration: none;
     display: block;
-    transition: background-color 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd; /* Lighter grey on hover */
+    background-color: #ffffff; /* Change background color on hover */
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #45a049; /* Darker green on hover */
 }
